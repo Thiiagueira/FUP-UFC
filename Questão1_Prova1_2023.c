@@ -28,4 +28,15 @@ int main (void){
                 mes++;
                 dia = 1;
             }
- 
+            break;
+        case 12:
+            if(dia == 31) {
+                mes=1;
+                dia=1;
+                ano++;
+            } else {dia++;}
+            break;
+        }
+    } else {dia++;}
+    printf("O dia seguinte eh %d %d %d", dia, mes, ano);
+}
